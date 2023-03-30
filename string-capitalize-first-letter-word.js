@@ -7,5 +7,6 @@ const capitalized = function (sentance){
     return str.join(" ");
 }
 
+
 console.log(capitalized("i love india"));
 console.log(capitalized("hardwork is not easy"));
