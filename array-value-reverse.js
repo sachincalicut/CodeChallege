@@ -4,7 +4,7 @@ var size = arr.length;
 for(var i = size-1; i>=0; i--){
     console.log(`Element$(i+1) is ${arr[i]}`);
 }
-// Reverse without Predefined method: Output 
+// Reverse String without Predefined method: Output !zimargorP ot emocleW
 function reverseString(str) {
     var newString = "";
     for (var i = str.length - 1; i >= 0; i--) {

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubling Javascript</title>
+</head>
+<body id="body">
+    <div id="div">
+        <span id="span">
+            <button id="button">Click Me</button>
+            </span>
+    </div>
+    <script>
+        const body = document.getElementById("body")[0];
+        const div = document.getElementById("div");
+        const span = document.getElementById("span");
+        const button = document.getElementById("button");
+
+        body.addEventListener("click" , () => console.log("body tag was clicked..."));
+        div.addEventListener("click" , () => console.log("Div Element was clicked..."));
+        span.addEventListener("click" , () => console.log("Span Element was clicked..."));
+        button.addEventListener("click" , () => console.log("Button tag was clicked..."));
+    </script>
+</body>
+
+</html>
