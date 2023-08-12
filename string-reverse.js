@@ -1,7 +1,12 @@
-function reverse(y){
-    if(y.length==1 || y.length == 0 ){
-        return y;
+   function reverse(string)
+    {
+    let arr = [];
+    for(let char of string) {
+      arr.unshift(char);
     }
-    return y.split('')[y.length - 1]+ reverse(y.slice(0, y.length-1));
-}
-console.log(reverse("Hello"));
+    let rev = arr.join('')
+    return rev
+    }
+    
+    let result = reverse("hello")
+    console.log(result)
