@@ -1,9 +1,10 @@
 // Remove duplicate array value in javascript?
-let chars = ['A', 'B', 'A', 'C', 'B'];
-let uniqueChars = [];
-chars.forEach((c) => {
-    if (!uniqueChars.includes(c)) {
-        uniqueChars.push(c);
+ let arr = ["scale", "happy", "strength",
+            "peace", "happy", "happy"];
+ 
+    function removeDuplicates(arr) {
+        return arr.filter((item,
+            index) => arr.indexOf(item) === index);
     }
-});
-console.log(uniqueChars);
+ 
+    console.log(removeDuplicates(arr));
