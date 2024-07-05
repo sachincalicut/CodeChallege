@@ -9,3 +9,10 @@ a3[4] = 100;
 console.log(a1);
 console.log(a2);
 console.log(a3);
+// JavaScript SetTimeout
+for(var i = 0; i <= 5; i++){
+	setTimeout(() =>{
+  	console.log(i);
+    
+  }, i * 1000);
+}
