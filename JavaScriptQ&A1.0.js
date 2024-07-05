@@ -26,3 +26,26 @@ for(var i = 0; i <= 5; i++){
 6
 6
 6
+console.log("1");
+//lower priority set timeout function will pushed to macro que..
+setTimeout(function(){
+	console.log("2");
+}, 0);
+//separate function will be created for test...
+function test(){
+	console.log("3");
+}
+test();
+//high priority Promise function will pushed to micro que...
+Promise.resolve().then(function(){
+	console.log("4");
+});
+console.log("5");
+//output 
+"1"
+"3"
+"5"
+"4"
+"2"
+
+
