@@ -9,6 +9,10 @@ a3[4] = 100;
 console.log(a1);
 console.log(a2);
 console.log(a3);
+//output 
+[50, 20, 80]
+[50, 20, 80]
+[10, 20, 30, undefined, 100]
 // JavaScript SetTimeout
 for(var i = 0; i <= 5; i++){
 	setTimeout(() =>{
@@ -16,3 +20,9 @@ for(var i = 0; i <= 5; i++){
     
   }, i * 1000);
 }
+// output 
+6
+6
+6
+6
+6
