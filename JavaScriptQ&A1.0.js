@@ -1,4 +1,4 @@
-// Paltech Interview Question in Javascript
+// Q&A Interview Question in Javascript
 let a1= [10, 20, 30];
 let a2= a1;
 let a3 = [...a1];
