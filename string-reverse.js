@@ -1,12 +1,9 @@
-   function reverse(string)
-    {
-    let arr = [];
-    for(let char of string) {
-      arr.unshift(char);
-    }
-    let rev = arr.join('')
-    return rev
-    }
-    
-    let result = reverse("hello")
-    console.log(result)
+const reverse = (s) => {
+  let result = ''
+  for(let x = s.length-1; x >= 0; x--) {
+    result += s[x]
+  }
+  return result
+}
+
+console.log(reverse('Have a Great Day'))
