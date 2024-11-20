@@ -1,27 +1,17 @@
-var str = "Welcome to Kerala";
-// emocleW ot alareK"
-function reverseString(myStr){
-    var strlen = myStr.length, result = "", reverseStr = "", reverseStrArr = [];
-  for(var i = strlen-1; i >= 0; i--){
-    reverseStr +=  myStr[i];
-  }
+function reverseWords(str) {
+  // Split the string into an array of words
+  const words = str.split(' ');
 
-    for(var j = 0; j < strlen; j++){
-    if(reverseStr[j] == " "){
-      reverseStrArr.push(result);
-      result = "";
-    }else{
-      result += reverseStr[j];
-      if(j + 1 == strlen){
-        reverseStrArr.push(result);
-        result = "";
-      }
-    }
-  }
+  // Reverse each word in the array
+  const reversedWords = words.map(word => {
+    return word.split('').reverse().join('');
+  });
 
-  for(var k=reverseStrArr.length - 1; k >= 0; k--){
-    result += reverseStrArr[k] + " "
-  }
-  console.log(result);
+  // Join the reversed words back into a string
+  return reversedWords.join(' ');
 }
-reverseString(str);
+
+const originalString = "Hello World";
+const reversedString = reverseWords(originalString);
+
+console.log(reversedString); // Output: "olleH dlroW"
