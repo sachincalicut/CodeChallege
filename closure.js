@@ -4,24 +4,17 @@
 
 
 // javascript closure example
+const makeCounter = () => {
 
-// outer function
-function greet() {
-
-    // variable defined outside the inner function
-    let name = 'John';
-
-    // inner function
-    function displayName() {
-
-        // accessing name variable
-        return 'Hi' + ' ' + name;
-      
+let count = 0; 
+    return () => {
+       return count++;
     }
 
-    return displayName;
 }
+const  counter = makeCounter();
+const counter2 = makeCounter();
 
-const g1 = greet();
-console.log(g1); // returns the function definition
-console.log(g1()); // returns the value
+console.log(counter()); 
+console.log(counter2()); 
+
