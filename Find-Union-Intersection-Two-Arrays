@@ -1,0 +1,23 @@
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+function union(arr1, arr2) {
+    // Create a Set to store unique values from both arrays
+    return Array.from(new Set([...arr1, ...arr2]));
+}
+
+function intersection(arr1, arr2) {
+    // Filter arr1 to include only elements that are also in arr2
+    return arr1.filter(value => arr2.includes(value));
+}
+
+// Example arrays
+const array1 = [1, 2, 3, 4, 5];
+const array2 = [4, 5, 6, 7, 8];
+
+// Calculate union
+const unionResult = union(array1, array2);
+console.log('Union:', unionResult); // Output: Union: [1, 2, 3, 4, 5, 6, 7, 8]
+
+// Calculate intersection
+const intersectionResult = intersection(array1, array2);
+console.log('Intersection:', intersectionResult); // Output: Intersection: [4, 5]
